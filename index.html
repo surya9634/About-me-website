@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="about-me-container">
+        <button class="about-button" onclick="toggleAboutMe()">Read About Me</button>
+        <div class="about-content hidden">
+            <div class="about-section">
+                <h2>About Me</h2>
+                <p>Hello! I'm Suraj Sharma, a 14-year-old innovator, and here's a little more about my journey.</p>
+            </div>
+
+            <div class="about-title">नमस्ते, Hola, Hello! I'm Suraj Sharma (Surya) 🚀</div>
+            <div class="about-description">
+                At just 14 years old, I am a passionate innovator with a relentless drive to push the limits of technology, blending it with real-world solutions...
+            </div>
+            <ul class="achievements">
+                <li>Champion at World Robotics Championship</li>
+                <li>Participated in IIT New Delhi Hackathon</li>
+                <li>Featured in over 30 Newspapers and 40 News Channels</li>
+            </ul>
+
+            <!-- New button to show the PDF viewer -->
+            <button class="about-button hidden" id="read-more-pdf" onclick="showPDF()">Read More (PDF)</button>
+        </div>
+    </div>
+    
+    <div class="container" id="project-container">
+        <div class="title" id="project-title">Project Title</div>
+        <div class="description" id="project-description">Project Description</div>
+        <ul class="feature-list" id="project-features"></ul>
+        <div class="button-group">
+            <button class="nav-button" onclick="prevProject()">Previous</button>
+            <button class="nav-button" onclick="nextProject()">Next</button>
+        </div>
+    </div>
+
+    <!-- PDF Viewer container, hidden initially -->
+    <div class="container hidden" id="pdf-viewer">
+        <iframe src="https://drive.google.com/file/d/1GPdVEw2zwK9vimHJwlr9cDw6AcSWLCQe/preview" frameborder="0" id="pdf-frame"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
